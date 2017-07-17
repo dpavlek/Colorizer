@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let turquoise = UIColor(red: 0.25, green: 0.93, blue: 0.82, alpha: 1)
+        colorsArray.append(turquoise)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func changeBackgroundColor(_ sender: UIButton) {
+        // let Colors = colors(rawValue: 1)?.returnColor()
+        self.view.backgroundColor = returnFromColorsArray()
+    }
 
 }
-
