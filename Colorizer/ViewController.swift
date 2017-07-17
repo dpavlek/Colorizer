@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeBackgroundColor(_ sender: UIButton) {
-        // let Colors = colors(rawValue: 1)?.returnColor()
+        // let tempColors = colors(rawValue: 1)?.returnColor()
+        
+        // Ne znam kako pretvoriti taj tempColors u UIColor.
+        
         self.view.backgroundColor = returnFromColorsArray()
     }
 

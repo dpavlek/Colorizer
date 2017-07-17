@@ -15,7 +15,7 @@ func returnFromColorsArray() -> UIColor {
     return colorsArray[Int(arc4random_uniform(UInt32(colorsArray.count)))]
 }
 
-enum colors: UInt32 {
+/* enum colors: UInt32 {
     case red, blue, green, yellow, orange, black, white, purple
 
     private var count: colors.RawValue {
@@ -29,7 +29,7 @@ enum colors: UInt32 {
     func returnColor() -> colors {
         return colors(rawValue: arc4random_uniform(count))!
     }
-}
+} */
 
 // UIColor.white predstavlja objekt bijele boje klase UIColor
 // Custom boje se mogu napraviti pomoću initializera koji prima RGBA, ali s vrijednostima od 0.00 do 1.00
